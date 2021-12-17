@@ -9,9 +9,14 @@ import {
   CardTitle,
 } from 'reactstrap';
 import './App.css';
+import Header from './components/Header';
 
 function App() {
-  return <div className="App">{/* placeholder */}</div>;
+  return (
+    <>
+      <Header></Header>
+    </>
+  );
 }
 
 export default App;

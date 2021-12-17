@@ -1,0 +1,252 @@
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+.custom-nav {
+  background-color: #f72585;
+}
+
+.custom-nav .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.hero-column {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-container {
+  padding: 0;
+}
+
+.logo-header {
+  margin-bottom: 0;
+}
+
+.nav-logo {
+  width: 4rem;
+}
+
+.custom-row {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-fun-fact {
+  background-color: #4895ef;
+}
+
+.btn-fun-fact-page {
+  background-color: #4895ef;
+  width: 8rem;
+}
+
+.custom-footer {
+  background-color: #f72585;
+}
+
+.footer-logo {
+  width: 8rem;
+  padding: 0.5rem;
+}
+
+.copyright {
+  padding: 1.5rem;
+}
+
+.social-icon {
+  width: 4rem;
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+}
+
+.hide-item {
+  display: none;
+}
+
+.about-img img {
+  max-width: 100%;
+}
+
+.fact-container {
+  position: absolute;
+  background-color: #4cc9f0;
+  opacity: 0.9;
+}
+
+.fact-info {
+  color: #000;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.fact-info2 {
+  color: #000;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.fact-container .closeBtn {
+  font-size: 2rem;
+  color: #f72585;
+}
+
+.close-button {
+  color: #b5179e;
+  font-size: 2rem;
+}
+
+.fade-in {
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+.img-col img {
+  max-width: 100%;
+}
+
+.page-fact-container {
+  width: 24rem;
+  height: 14rem;
+}
+
+.movie-h2 {
+  background-color: #4cc9f0;
+  font-family: 'Road Rage', cursive;
+}
+
+.movies {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.movies li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  background-color: #272727;
+}
+
+.movies li img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.movies li h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 15px 10px 0;
+  margin-top: auto;
+}
+
+.search-row {
+  margin-top: 2rem;
+  border-top: #4361ee solid 2px;
+}
+
+.search-row h2 {
+  font-size: 1.5rem;
+}
+
+.search-list {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-list .search-item-thumbnail img {
+  max-width: 6rem;
+  padding: 0.5rem;
+}
+
+.result-grid {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.result-grid .movie-poster {
+  display: block;
+}
+
+.result-grid .movie-poster img {
+  max-width: 10rem;
+  border: 1px solid black;
+}
+
+.result-grid .movie-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.result-grid .movie-info h3 {
+  font-size: 2rem;
+  font-family: 'Road Rage', cursive;
+}
+
+.result-grid .movie-info li {
+  list-style: none;
+}
+
+.hide-search-list {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
