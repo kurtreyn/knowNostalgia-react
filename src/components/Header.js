@@ -1,13 +1,21 @@
 import React from 'react';
-import { mediaObject } from '../shared/MediaObject';
+import heroImage from '../images/hero-img-lg.jpg';
+import headerLogo from '../images/header-logo.png';
 
-export const Header = () => {
+const Header = () => {
   return (
     <header>
       <div className="jumbotron-fluid">
         <div className="container-fluid hero-container">
-          <img src={mediaObject.image} alt={mediaObject.name} />
+          <img src={heroImage} alt="hero" />
         </div>
+      </div>
+      <div className="col-12 d-flex justify-content-center logo-column">
+        <img
+          src={headerLogo}
+          alt="header logo"
+          className="img-fluid logo-header"
+        />
       </div>
     </header>
   );

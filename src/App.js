@@ -7,14 +7,19 @@ import {
   CardText,
   CardBody,
   CardTitle,
+  NavbarToggler,
 } from 'reactstrap';
-import './App.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../src/sass/style.css';
 import Header from './components/Header';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
     <>
-      <Header></Header>
+      <Header />
+      <Navigation />
     </>
   );
 }
