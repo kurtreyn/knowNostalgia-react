@@ -1,10 +1,10 @@
 import React from 'react';
 import semiCharmed from '../images/thirdEyeBlind-semiCharmedLife.jpg';
 
-const CardElement = () => {
+const CardElement = (image) => {
   return (
     <div className="card h-100">
-      <img className="card-img-top" src={semiCharmed} alt="album cover" />
+      <img className="card-img-top" src="" alt="album cover" />
       <div className="fact-container hide-item" id="semi-charmed">
         <button type="button" className="close close-button" aria-label="Close">
           <span aria-hidden="true">&times;</span>
