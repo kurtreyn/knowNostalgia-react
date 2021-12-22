@@ -4,15 +4,17 @@ import Header from './components/HeaderComponent';
 import Navigation from './components/NavigationComponent';
 import Container from './components/ContainerComponent';
 import RowAndColumn from './components/RowAndColumn';
-import CardElement from './components/CardComponent';
+import CardComponent from './components/CardComponent';
 import Footer from './components/FooterComponent';
+import { HomePageImages } from './shared/HomePageImages';
 
 function App() {
+  const semiCharmed = '../images/thirdEyeBlind-semiCharmedLife.jpg';
   return (
     <>
       <Header />
       <Navigation />
-      <Container></Container>
+      <CardComponent image={semiCharmed} />
       <Footer />
     </>
   );
