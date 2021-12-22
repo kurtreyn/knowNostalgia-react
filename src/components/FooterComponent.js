@@ -2,7 +2,7 @@ import React from 'react';
 import { FooterIcons } from '../shared/FooterIcons';
 import logo from '../images/sunglasses.svg';
 
-const FooterElement = ({ FooterIcons }) => {
+const Footer = ({ FooterIcons }) => {
   return (
     <footer className="site-footer custom-footer">
       <div className="container-fluid footer-container">
@@ -45,4 +45,4 @@ const FooterElement = ({ FooterIcons }) => {
   );
 };
 
-export default FooterElement;
+export default Footer;

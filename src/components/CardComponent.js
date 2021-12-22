@@ -1,7 +1,7 @@
 import React from 'react';
 import semiCharmed from '../images/thirdEyeBlind-semiCharmedLife.jpg';
 
-const CardElement = (image) => {
+const CardComponent = (image) => {
   return (
     <div className="card h-100">
       <img className="card-img-top" src="" alt="album cover" />
@@ -27,4 +27,4 @@ const CardElement = (image) => {
   );
 };
 
-export default CardElement;
+export default CardComponent;

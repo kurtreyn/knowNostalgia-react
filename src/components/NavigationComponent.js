@@ -1,11 +1,20 @@
 // https://reactstrap.github.io/?path=/docs/components-navbar--navbar
-
+import {
+  Nav,
+  Navbar,
+  NavbarBrand,
+  Jumbotron,
+  NavbarToggler,
+  Collapse,
+  NavItem,
+} from 'reactstrap';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import navLogo from '../images/sunglasses.svg';
 
 const Navigation = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light custom-nav">
+    <Nav className="navbar navbar-expand-lg navbar-light custom-nav">
       <a className="navbar-brand" href="#">
         <img src={navLogo} alt="logo" className="nav-logo" />
       </a>
@@ -62,7 +71,7 @@ const Navigation = () => {
           </li>
         </ul>
       </div>
-    </nav>
+    </Nav>
   );
 };
 
