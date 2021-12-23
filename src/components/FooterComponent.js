@@ -1,7 +1,9 @@
 import React from 'react';
-import { FooterIcons } from '../shared/FooterIcons';
-// import {ReactComponent as facebookIcon} from '../images/icon-facebook.svg';
 import logo from '../images/sunglasses.svg';
+import facebookIcon from '../images/icon-facebook.png';
+import instagramIcon from '../images/icon-instagram.png';
+import youtubeIcon from '../images/icon-youtube.png';
+import twitterIcon from '../images/icon-twitter.png';
 
 const Footer = () => {
   return (
@@ -10,25 +12,29 @@ const Footer = () => {
         <div className="row">
           <div className="col-4 col-sm-4 text-center">
             <a href="http://facebook.com/">
-              <img src="" alt="facebook icon" className="social-icon" />
+              <img
+                src={facebookIcon}
+                alt="facebook icon"
+                className="social-icon"
+              />
             </a>
             <a href="http://twitter.com/">
               <img
-                src="./assets/images/icon-twitter.svg"
+                src={twitterIcon}
                 alt="twitter icon"
                 className="social-icon"
               />
             </a>
             <a href="http://youtube.com/">
               <img
-                src="./assets/images/icon-youtube.svg"
+                src={youtubeIcon}
                 alt="youtube icon"
                 className="social-icon"
               />
             </a>
             <a href="http://instagram.com/">
               <img
-                src="./assets/images/icon-instagram.svg"
+                src={instagramIcon}
                 alt="instagram icon"
                 className="social-icon"
               />
