@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+import CardComponent from './CardComponent';
 import { HomePageContent } from '../shared/HomePageContent';
 
-class CardComponent extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,4 +31,4 @@ class CardComponent extends Component {
   }
 }
 
-export default CardComponent;
+export default App;
