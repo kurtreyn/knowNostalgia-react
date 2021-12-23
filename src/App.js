@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Header from './components/HeaderComponent';
 import Navigation from './components/NavigationComponent';
 import CardComponent from './components/CardComponent';
-import HomeComponent from './components/HomeComponent';
+import Home from './components/HomeComponent';
 import Footer from './components/FooterComponent';
 
 class App extends Component {
@@ -13,9 +13,7 @@ class App extends Component {
       <>
         <Header />
         <Navigation />
-        <div className="container">
-          <HomeComponent />
-        </div>
+        <Home />
         <Footer />
       </>
     );
