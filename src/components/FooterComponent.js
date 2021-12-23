@@ -1,8 +1,9 @@
 import React from 'react';
 import { FooterIcons } from '../shared/FooterIcons';
+// import {ReactComponent as facebookIcon} from '../images/icon-facebook.svg';
 import logo from '../images/sunglasses.svg';
 
-const Footer = ({ FooterIcons }) => {
+const Footer = () => {
   return (
     <footer className="site-footer custom-footer">
       <div className="container-fluid footer-container">
