@@ -3,7 +3,6 @@ import '../src/sass/style.css';
 import React, { Component } from 'react';
 import Header from './components/HeaderComponent';
 import Navigation from './components/NavigationComponent';
-import CardComponent from './components/CardComponent';
 import Home from './components/HomeComponent';
 import Footer from './components/FooterComponent';
 

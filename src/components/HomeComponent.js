@@ -17,6 +17,10 @@ class Home extends Component {
     };
   }
 
+  displayFact() {
+    console.log('clicked');
+  }
+
   render() {
     const RenderCard = this.state.cards.map((card) => {
       return (
@@ -39,7 +43,11 @@ class Home extends Component {
             <CardBody className="d-flex flex-column">
               <CardTitle tag="h5">{card.category}</CardTitle>
               <CardText>{card.info}</CardText>
-              <Button variant="primary" className="mt-auto btn-fun-fact">
+              <Button
+                onClick={this.displayFact}
+                variant="primary"
+                className="mt-auto btn-fun-fact"
+              >
                 Fun Fact
               </Button>
             </CardBody>
