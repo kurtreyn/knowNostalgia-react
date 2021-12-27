@@ -18,7 +18,10 @@ class Home extends Component {
   }
 
   displayFact() {
-    console.log('clicked');
+    const factContainer = document.querySelector('.fact-container');
+    const buttonId = document.querySelector('.btn-fun-fact').dataset.id;
+    factContainer.classList.remove('hide-item');
+    console.log(`button id: ${buttonId}`);
   }
 
   render() {
@@ -47,6 +50,7 @@ class Home extends Component {
                 onClick={this.displayFact}
                 variant="primary"
                 className="mt-auto btn-fun-fact"
+                data-id={card.id}
               >
                 Fun Fact
               </Button>
