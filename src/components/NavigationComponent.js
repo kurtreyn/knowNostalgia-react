@@ -13,7 +13,7 @@ import {
   DropdownItem,
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import navLogo from '../images/sunglasses.svg';
+import navLogo from '../images/sunglasses.png';
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);

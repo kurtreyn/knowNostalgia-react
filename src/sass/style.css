@@ -5,7 +5,9 @@
 }
 
 .custom-nav {
-  background-color: #f8485e;
+
+  background-color: #00c1d4;
+
 }
 
 .custom-nav .navbar-nav .nav-link {
@@ -14,6 +16,11 @@
 
 .custom-nav .navbar-nav .nav-link a {
   color: #fff;
+  text-decoration: none;
+}
+
+.custom-nav .navbar-nav .nav-link a:hover {
+  color: #333;
 }
 
 .hero-column {
@@ -43,16 +50,22 @@
 }
 
 .btn-fun-fact {
-  background-color: #4895ef;
+  background-color: #f8485e;
+}
+
+.btn-fun-fact:hover {
+  background-color: #bd3747;
 }
 
 .btn-fun-fact-page {
-  background-color: #4895ef;
+  background-color: #f8485e;
   width: 8rem;
 }
 
 .custom-footer {
-  background-color: #f8485e;
+
+  background-color: #00c1d4;
+
 }
 
 .footer-logo {
@@ -98,11 +111,13 @@
 
 .fact-container .closeBtn {
   font-size: 2rem;
-  color: #f8485e;
+
+  color: #00c1d4;
+
 }
 
 .close-button {
-  color: #b5179e;
+  color: #512d6d;
   font-size: 2rem;
 }
 
@@ -192,7 +207,7 @@
 
 .search-row {
   margin-top: 2rem;
-  border-top: #4361ee solid 2px;
+  border-top: #eeeeee solid 2px;
 }
 
 .search-row h2 {
