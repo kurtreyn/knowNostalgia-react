@@ -6,7 +6,10 @@ class VideoGames extends Component {
       <div className="container">
         <div className="row custom-row">
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
-            <img src="../assets/images/god-of-war.jpg" alt="god of war" />
+            <img
+              src="../assets/images/video-games-god-of-war.jpg"
+              alt="god of war"
+            />
           </div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
             <h2 className="movie-h2 badge-pill">God of War</h2>
@@ -32,23 +35,24 @@ class VideoGames extends Component {
         <div className="row custom-row">
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
             <img
-              src="../assets/images/movies-cloverfield.jpg"
-              alt="cloverfield"
+              src="../assets/images/video-games-half-life.jpg"
+              alt="half-life"
             />
           </div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-            <h2 className="movie-h2 badge-pill">Cloverfield</h2>
+            <h2 className="movie-h2 badge-pill">Half-Life</h2>
             <div className="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
               <div
                 className="page-fact-container d-flex flex-column"
-                data-container="cloverfield"
+                data-container="half-life"
               >
-                A group of friends venture deep into the streets of New York on
-                a rescue mission during a rampaging monster attack.
+                Developed by Valve and published by Sierra Studios for Windows
+                in 1998. It was Valve's debut product and the first game in the
+                Half-Life series.
               </div>
               <button
                 className="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
-                data-fact-button="cloverfield"
+                data-fact-button="half-life"
               >
                 Find Out More
               </button>
@@ -59,24 +63,24 @@ class VideoGames extends Component {
         <div className="row custom-row">
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
             <img
-              src="../assets/images/movies-donnie-darko.jpg"
-              alt="donnie darko"
+              src="../assets/images/video-games-mario-64.jpeg"
+              alt="mario-64"
             />
           </div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-            <h2 className="movie-h2 badge-pill">Donnie Darko</h2>
+            <h2 className="movie-h2 badge-pill">Mario 64</h2>
             <div className="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
               <div
                 className="page-fact-container d-flex flex-column"
-                data-container="donnie-darko"
+                data-container="mario"
               >
-                After narrowly escaping a bizarre accident, a troubled teenager
-                is plagued by visions of a man in a large rabbit suit who
-                manipulates him to commit a series of crimes.
+                A 1996 platform game for the Nintendo 64 and the first Super
+                Mario game to feature 3D gameplay. It was developed by Nintendo
+                EAD and published by Nintendo.
               </div>
               <button
                 className="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
-                data-fact-button="donnie-darko"
+                data-fact-button="mario"
               >
                 Find Out More
               </button>
@@ -89,12 +93,12 @@ class VideoGames extends Component {
             <form>
               <h2>Search Movies</h2>
               <div className="form-group">
-                <label for="movieTitle"></label>
+                <label for="game-title"></label>
                 <input
                   type="text"
                   className="form-control"
-                  id="movie-title"
-                  placeholder="Search for a Movie"
+                  id="game-title"
+                  placeholder="Search Video Games"
                 />
               </div>
               {/* <div className="form-group">

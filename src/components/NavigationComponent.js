@@ -13,7 +13,6 @@ import {
   DropdownItem,
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import Home from './HomeComponent';
 import navLogo from '../images/sunglasses.svg';
 
 const Navigation = (props) => {
@@ -31,20 +30,36 @@ const Navigation = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href={'/home'}>Home</NavLink>
+              <NavLink>
+                <Link to="/">Home</Link>
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href={'/about'}>About</NavLink>
+              <NavLink>
+                <Link to="/about">About</Link>
+              </NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Select Interest
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>Movies</DropdownItem>
-                <DropdownItem>Music</DropdownItem>
-                <DropdownItem>TV Shows</DropdownItem>
-                <DropdownItem>Video Games</DropdownItem>
+                <DropdownItem>
+                  {' '}
+                  <Link to="/movies">Movies</Link>
+                </DropdownItem>
+                <DropdownItem>
+                  {' '}
+                  <Link to="/music">Music</Link>
+                </DropdownItem>
+                <DropdownItem>
+                  {' '}
+                  <Link to="/tvshoww">TV Shows</Link>
+                </DropdownItem>
+                <DropdownItem>
+                  {' '}
+                  <Link to="/videogames">Video Games</Link>
+                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>

@@ -6,23 +6,27 @@ class TVshows extends Component {
       <div className="container">
         <div className="row custom-row">
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
-            <img src="../assets/images/movies-anchorman.jpg" alt="Anchorman" />
+            <img
+              src="../assets/images/tv-shows-south-park.jpeg"
+              alt="south park"
+            />
           </div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-            <h2 className="movie-h2 badge-pill">Anchorman</h2>
+            <h2 className="movie-h2 badge-pill">South Park</h2>
             <div className="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
               <div
                 className="page-fact-container d-flex flex-column"
-                data-container="anchorman"
+                data-container="south-park"
               >
-                Ron Burgundy is San Diego's top-rated newsman in the
-                male-dominated broadcasting of the 1970s, but that's all about
-                to change for Ron and his cronies when an ambitious woman is
-                hired as a new anchor.
+                The curious, adventure-seeking, fourth grade group of 10 year
+                old boys, Stan, Kyle, Cartman, and Kenny, all join in in
+                buffoonish adventures that sometimes evolve nothing. Sometimes
+                something that was simple at the start, turns out to get out of
+                control.
               </div>
               <button
                 className="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
-                data-fact-button="anchorman"
+                data-fact-button="south-park"
               >
                 Find Out More
               </button>
@@ -32,24 +36,24 @@ class TVshows extends Component {
 
         <div className="row custom-row">
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
-            <img
-              src="../assets/images/movies-cloverfield.jpg"
-              alt="cloverfield"
-            />
+            <img src="../assets/images/tv-shows-sapranos.jpg" alt="sopranos" />
           </div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-            <h2 className="movie-h2 badge-pill">Cloverfield</h2>
+            <h2 className="movie-h2 badge-pill">The Sopranos</h2>
             <div className="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
               <div
                 className="page-fact-container d-flex flex-column"
-                data-container="cloverfield"
+                data-container="sopranos"
               >
-                A group of friends venture deep into the streets of New York on
-                a rescue mission during a rampaging monster attack.
+                An innovative look at the life of fictional Mafia Capo Tony
+                Soprano, this serial is presented largely first person, but
+                additional perspective is conveyed by the intimate conversations
+                Tony has with his psychotherapist. We see Tony at work, at home,
+                and in therapy.
               </div>
               <button
                 className="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
-                data-fact-button="cloverfield"
+                data-fact-button="sopranos"
               >
                 Find Out More
               </button>
@@ -59,25 +63,24 @@ class TVshows extends Component {
 
         <div className="row custom-row">
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
-            <img
-              src="../assets/images/movies-donnie-darko.jpg"
-              alt="donnie darko"
-            />
+            <img src="../assets/images/tv-shows-dexter.jpg" alt="dexter" />
           </div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-            <h2 className="movie-h2 badge-pill">Donnie Darko</h2>
+            <h2 className="movie-h2 badge-pill">Dexter</h2>
             <div className="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
               <div
                 className="page-fact-container d-flex flex-column"
-                data-container="donnie-darko"
+                data-container="dexter"
               >
-                After narrowly escaping a bizarre accident, a troubled teenager
-                is plagued by visions of a man in a large rabbit suit who
-                manipulates him to commit a series of crimes.
+                As a Miami forensics expert, he spends his days solving crimes,
+                and nights committing them. But Dexter lives by a strict code of
+                honor that is both his saving grace and lifelong burden. Torn
+                between his deadly compulsion and his desire for true happiness,
+                Dexter is a man in profound conflict with the world and himself.
               </div>
               <button
                 className="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
-                data-fact-button="donnie-darko"
+                data-fact-button="dexter"
               >
                 Find Out More
               </button>
@@ -90,12 +93,12 @@ class TVshows extends Component {
             <form>
               <h2>Search Movies</h2>
               <div className="form-group">
-                <label for="movieTitle"></label>
+                <label for="tv-title"></label>
                 <input
                   type="text"
                   className="form-control"
-                  id="movie-title"
-                  placeholder="Search for a Movie"
+                  id="tv-title"
+                  placeholder="Search TV Shows"
                 />
               </div>
               {/* <div className="form-group">

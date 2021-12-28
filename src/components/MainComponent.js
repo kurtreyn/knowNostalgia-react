@@ -1,28 +1,31 @@
 import React, { Component } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './HeaderComponent';
 import Navigation from './NavigationComponent';
-import Home from './HomeComponent';
-// import About from './AboutComponent';
 import Footer from './FooterComponent';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import { HomePageContent } from '../shared/HomePageContent';
+import About from './AboutComponent';
+import Movies from './MoviesComponent';
+import TVshows from './TVshowsComponent';
+import Music from './MusicComponent';
+import VideoGames from './VideoGamesComponent';
+import Home from './HomeComponent';
 
 class Main extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      cards: HomePageContent,
-    };
-  }
-
   render() {
     return (
-      <>
+      <div>
         <Header />
         <Navigation />
-
+        <Routes>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/movies" component={Movies} />
+          <Route path="/music" component={Music} />
+          <Route path="/tvshows" component={TVshows} />
+          <Route path="/videogames" component={VideoGames} />
+        </Routes>
         <Footer />
-      </>
+      </div>
     );
   }
 }
