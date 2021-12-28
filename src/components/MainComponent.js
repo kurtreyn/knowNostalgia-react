@@ -9,8 +9,15 @@ import TVshows from './TVshowsComponent';
 import Music from './MusicComponent';
 import VideoGames from './VideoGamesComponent';
 import Home from './HomeComponent';
+import { PageContent } from '../shared/PageContent';
 
 class Main extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      pageContent: PageContent,
+    };
+  }
   render() {
     return (
       <div>
