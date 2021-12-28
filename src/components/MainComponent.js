@@ -12,12 +12,16 @@ import Home from './HomeComponent';
 
 class Main extends Component {
   render() {
+    const HomePage = () => {
+      return <Home />;
+    };
+
     return (
       <div>
         <Header />
         <Navigation />
         <Routes>
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact component={HomePage} />
           <Route path="/about" component={About} />
           <Route path="/movies" component={Movies} />
           <Route path="/music" component={Music} />
