@@ -5,7 +5,9 @@
 }
 
 .custom-nav {
+
   background-color: #00c1d4;
+
 }
 
 .custom-nav .navbar-nav .nav-link {
@@ -61,7 +63,9 @@
 }
 
 .custom-footer {
+
   background-color: #00c1d4;
+
 }
 
 .footer-logo {
@@ -107,7 +111,9 @@
 
 .fact-container .closeBtn {
   font-size: 2rem;
+
   color: #00c1d4;
+
 }
 
 .close-button {
