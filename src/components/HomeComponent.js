@@ -15,7 +15,6 @@ class Home extends Component {
     this.state = {
       cards: HomePageContent,
     };
-    this.displayFact = this.displayFact.bind(this);
   }
 
   displayFact(e) {
@@ -25,8 +24,6 @@ class Home extends Component {
     console.log(`current button is ${currentBtn}`);
     for (let i = 0; i < containers.length; i++) {
       let curContID = containers[i].getAttribute('data-container');
-      // console.log(containers[i]);
-
       if (currentBtn === curContID) {
         console.log(`current container is ${curContID}`);
       }
