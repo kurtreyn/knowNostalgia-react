@@ -8,12 +8,14 @@ import {
   Button,
 } from 'reactstrap';
 import { HomePageContent } from '../shared/HomePageContent';
+import { PageContent } from '../shared/PageContent';
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       cards: HomePageContent,
+      pageContent: PageContent,
     };
   }
 
@@ -22,14 +24,14 @@ class Home extends Component {
     const closeBtn = document.querySelectorAll('.close-button');
     let currentCont = '';
     const containers = document.querySelectorAll('.fact-container');
-    console.log(`current button is ${currentBtn}`);
+    // console.log(`current button is ${currentBtn}`);
 
     for (let i = 0; i < containers.length; i++) {
       currentCont = containers[i].getAttribute('data-container');
       // console.log(`current cont is ${currentCont}`);
 
       if (currentCont === currentBtn) {
-        let attrib = currentCont;
+        // let attrib = currentCont;
 
         containers[i].classList.remove('hide-item');
         containers[i].classList.add('fade-in');

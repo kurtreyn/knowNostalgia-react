@@ -2,7 +2,7 @@ import React from 'react';
 import heroImage from '../images/hero-img-lg.jpg';
 import headerLogo from '../images/header-logo.png';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
       <div className="jumbotron-fluid">
