@@ -12,6 +12,10 @@
   color: #fff;
 }
 
+.custom-nav .navbar-nav .nav-link a {
+  color: #fff;
+}
+
 .hero-column {
   margin: 0;
   padding: 0;
