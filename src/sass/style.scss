@@ -2,12 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
 
-$primaryColor: #f8485e;
+$primaryColor: #00c1d4;
 // $primaryColor: blue;
-$colorTwo: #b5179e;
+$colorTwo: #512d6d;
 $colorThree: #7209b7;
-$colorFour: #4361ee;
-$funFactBtn: #4895ef;
+$colorFour: #eeeeee;
+$funFactBtn: #f8485e;
 $colorSix: #4cc9f0;
 
 .jumbotron {
@@ -22,6 +22,10 @@ $colorSix: #4cc9f0;
       color: #fff;
       a {
         color: #fff;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #333;
       }
     }
   }
@@ -54,6 +58,10 @@ $colorSix: #4cc9f0;
 
 .btn-fun-fact {
   background-color: $funFactBtn;
+}
+
+.btn-fun-fact:hover {
+  background-color: #bd3747;
 }
 
 .btn-fun-fact-page {
