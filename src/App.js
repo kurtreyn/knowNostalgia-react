@@ -1,20 +1,26 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/sass/style.css';
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Main from './components/MainComponent';
 import Header from './components/HeaderComponent';
 import Navigation from './components/NavigationComponent';
-import Home from './components/HomeComponent';
 import Footer from './components/FooterComponent';
+import About from './components/AboutComponent';
+import Movies from './components/MoviesComponent';
+import Home from './components/HomeComponent';
 
 class App extends Component {
   render() {
     return (
-      <>
-        <Header />
-        <Navigation />
-        <Home />
-        <Footer />
-      </>
+      <BrowserRouter>
+        <div className="App">
+          <Header />
+          <Navigation />
+          <Home />
+          <Footer />
+        </div>
+      </BrowserRouter>
     );
   }
 }

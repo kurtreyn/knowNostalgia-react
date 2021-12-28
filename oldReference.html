@@ -414,9 +414,98 @@
 </html>
 
 <!-- 
-      <Card className="h-100">
-        <CardImg variant="top" src={semiCharmed} />
-        <div className="fact-container hide-item" id="semi-charmed">
+import React, { Component } from 'react';
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  Button,
+} from 'reactstrap';
+import { HomePageContent } from '../shared/HomePageContent';
+
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      cards: HomePageContent,
+    };
+  }
+
+  displayFact(event) {
+    let button = event.target;
+    const container = document.querySelector('.fact-container');
+    console.log(container);
+    // console.log(button);
+    let buttonID = button.dataset.button;
+    console.log(`button ID: ${buttonID}`);
+    // let containerID = container.dataset.container[0];
+    // console.log(containerID);
+  }
+
+  render() {
+    const RenderCard = this.state.cards.map((card) => {
+      return (
+        <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <Card className="h-100" key={card.id}>
+            <CardImg variant="top" src={card.image} />
+            <div className="fact-container hide-item" data-container={card.id}>
+              <button
+                type="button"
+                className="close close-button"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div className="fact-info"></div>
+            </div>
+            <CardBody className="d-flex flex-column">
+              <CardTitle tag="h5">{card.category}</CardTitle>
+              <CardText>{card.info}</CardText>
+              <Button
+                onClick={this.displayFact}
+                className="mt-auto btn-fun-fact"
+                data-button={card.id}
+              >
+                Fun Fact
+              </Button>
+            </CardBody>
+          </Card>
+        </div>
+      );
+    });
+    return (
+      <div className="container">
+        <div className="row custom-row">{RenderCard}</div>
+      </div>
+    );
+  }
+}
+
+export default Home;
+
+
+ -->
+
+<!-- 
+
+import React, { Component } from 'react';
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  Button,
+} from 'reactstrap';
+
+function RenderCard({ item }) {
+  return (
+    <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+      <Card className="h-100" key={item.id}>
+        <CardImg variant="top" src={item.image} />
+        <div className="fact-container hide-item" data-container={item.id}>
           <button
             type="button"
             className="close close-button"
@@ -427,18 +516,34 @@
           <div className="fact-info"></div>
         </div>
         <CardBody className="d-flex flex-column">
-          <CardTitle>Music</CardTitle>
-          <CardText>
-            Semi-Charmed Life by Third Eye Blind was released in 1997.
-          </CardText>
-          <Button variant="primary" className="btn-fun-fact">
+          <CardTitle tag="h5">{item.category}</CardTitle>
+          <CardText>{item.info}</CardText>
+          <Button
+            onClick={this.displayFact}
+            className="mt-auto btn-fun-fact"
+            data-button={item.id}
+          >
             Fun Fact
           </Button>
         </CardBody>
       </Card>
+    </div>
+  );
+}
 
+function Home(props) {
+  return (
+    <div className="container">
+      <div className="row custom-row">
+        <RenderCard item={props.cards} />
+      </div>
+    </div>
+  );
+}
+
+export default Home;
 
 
 
   
- -->
+  -->

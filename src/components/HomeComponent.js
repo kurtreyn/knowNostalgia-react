@@ -17,23 +17,21 @@ class Home extends Component {
     };
   }
 
-  displayFact() {
-    const factContainer = document.querySelector('.fact-container');
-    const buttonId = document.querySelector('.btn-fun-fact').dataset.id;
-    factContainer.classList.remove('hide-item');
-    console.log(`button id: ${buttonId}`);
+  displayFact(event) {
+    let button = event.target;
+    let buttonID = button.dataset.button;
+    const container = document.querySelector('.fact-container');
+    console.log(`button ID: ${buttonID}`);
+    container.classList.remove('hide-item');
   }
 
   render() {
     const RenderCard = this.state.cards.map((card) => {
       return (
-        <div
-          className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"
-          key={card.id}
-        >
-          <Card className="h-100">
+        <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <Card className="h-100" key={card.id}>
             <CardImg variant="top" src={card.image} />
-            <div className="fact-container hide-item" id="semi-charmed">
+            <div className="fact-container hide-item" data-container={card.id}>
               <button
                 type="button"
                 className="close close-button"
@@ -48,9 +46,8 @@ class Home extends Component {
               <CardText>{card.info}</CardText>
               <Button
                 onClick={this.displayFact}
-                variant="primary"
                 className="mt-auto btn-fun-fact"
-                data-id={card.id}
+                data-button={card.id}
               >
                 Fun Fact
               </Button>
