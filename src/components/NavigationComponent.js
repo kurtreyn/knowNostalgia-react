@@ -1,4 +1,3 @@
-// https://reactstrap.github.io/?path=/docs/components-navbar--navbar
 import React, { useState } from 'react';
 import {
   Collapse,
@@ -13,6 +12,8 @@ import {
   DropdownMenu,
   DropdownItem,
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import Home from './HomeComponent';
 import navLogo from '../images/sunglasses.svg';
 
 const Navigation = (props) => {
@@ -30,12 +31,10 @@ const Navigation = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Home</NavLink>
+              <NavLink href={'/home'}>Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                About
-              </NavLink>
+              <NavLink href={'/about'}>About</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
