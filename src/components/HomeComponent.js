@@ -8,7 +8,7 @@ import {
   Button,
 } from 'reactstrap';
 import { HomePageContent } from '../shared/HomePageContent';
-let currentBtn = '';
+
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -18,22 +18,26 @@ class Home extends Component {
     this.displayFact = this.displayFact.bind(this);
   }
 
-  // displayFact(event) {
-  //   let button = event.target;
-  //   let buttonID = button.dataset.button;
-  //   const container = document.querySelector('.fact-container');
-  //   let containerID = container.dataset.container;
-  //   // console.log(containerID);
-  //   // console.log(`button ID: ${buttonID}`);
-  //   // container.classList.remove('hide-item');
-  // }
-
-  displayFact() {
+  displayFact(e) {
+    let currentBtn = e.target.getAttribute('data-button');
+    const closeBtn = document.querySelectorAll('.close-button');
     const containers = document.querySelectorAll('.fact-container');
-    // currentBtn = Button.getAttribute('data-button');
+    console.log(`current button is ${currentBtn}`);
     for (let i = 0; i < containers.length; i++) {
-      let curCont = containers[i].getAttribute('data-container');
-      console.log(curCont);
+      let curContID = containers[i].getAttribute('data-container');
+      // console.log(containers[i]);
+
+      if (currentBtn === curContID) {
+        console.log(`current container is ${curContID}`);
+      }
+      containers[i].classList.remove('hide-item');
+
+      const hideContainer = function () {
+        containers[i].classList.add('hide-item');
+      };
+      for (const cb of closeBtn) {
+        cb.addEventListener('click', hideContainer);
+      }
     }
   }
 
@@ -51,7 +55,7 @@ class Home extends Component {
               >
                 <span aria-hidden="true">&times;</span>
               </button>
-              <div className="fact-info"></div>
+              <div className="fact-info">{card.funFact}</div>
             </div>
             <CardBody className="d-flex flex-column">
               <CardTitle tag="h5">{card.category}</CardTitle>
