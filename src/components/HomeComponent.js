@@ -20,14 +20,22 @@ class Home extends Component {
   displayFact(e) {
     let currentBtn = e.target.getAttribute('data-button');
     const closeBtn = document.querySelectorAll('.close-button');
+    let currentCont = '';
     const containers = document.querySelectorAll('.fact-container');
     console.log(`current button is ${currentBtn}`);
+
     for (let i = 0; i < containers.length; i++) {
-      let curContID = containers[i].getAttribute('data-container');
-      if (currentBtn === curContID) {
-        console.log(`current container is ${curContID}`);
+      currentCont = containers[i].getAttribute('data-container');
+      // console.log(`current cont is ${currentCont}`);
+
+      if (currentCont === currentBtn) {
+        let attrib = currentCont;
+
+        containers[i].classList.remove('hide-item');
+        containers[i].classList.add('fade-in');
+      } else {
+        containers[i].classList.add('hide-item');
       }
-      containers[i].classList.remove('hide-item');
 
       const hideContainer = function () {
         containers[i].classList.add('hide-item');
@@ -36,6 +44,9 @@ class Home extends Component {
         cb.addEventListener('click', hideContainer);
       }
     }
+
+    currentBtn = '';
+    currentCont = '';
   }
 
   render() {
