@@ -54,11 +54,15 @@ const Navigation = (props) => {
                 </DropdownItem>
                 <DropdownItem>
                   {' '}
-                  <Link to="/tvshoww">TV Shows</Link>
+                  <Link to="/tvshows">TV Shows</Link>
                 </DropdownItem>
                 <DropdownItem>
                   {' '}
                   <Link to="/videogames">Video Games</Link>
+                </DropdownItem>
+                <DropdownItem>
+                  {' '}
+                  <Link to="/protopage">Proto Page</Link>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>

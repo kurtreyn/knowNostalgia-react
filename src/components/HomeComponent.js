@@ -8,14 +8,12 @@ import {
   Button,
 } from 'reactstrap';
 import { HomePageContent } from '../shared/HomePageContent';
-import { PageContent } from '../shared/PageContent';
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       cards: HomePageContent,
-      pageContent: PageContent,
     };
   }
 
@@ -91,3 +89,39 @@ class Home extends Component {
 }
 
 export default Home;
+
+/*
+    <div className="container">
+        <div className="row custom-row">
+          
+        <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
+            <img src="../assets/images/movies-anchorman.jpg" alt="Anchorman" />
+          </div>
+
+          <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
+            <h2 className="movie-h2 badge-pill">Anchorman</h2>
+
+            <div className="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
+              <div
+                className="page-fact-container d-flex flex-column"
+                data-container="anchorman"
+              >
+                Ron Burgundy is San Diego's top-rated newsman in the
+                male-dominated broadcasting of the 1970s, but that's all about
+                to change for Ron and his cronies when an ambitious woman is
+                hired as a new anchor.
+              </div>
+              <button
+                className="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
+                data-fact-button="anchorman"
+              >
+                Find Out More
+              </button>
+            </div>
+          </div>
+        
+          </div>
+      
+        </div>
+
+*/

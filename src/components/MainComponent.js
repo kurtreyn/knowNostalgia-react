@@ -9,6 +9,7 @@ import TVshows from './TVshowsComponent';
 import Music from './MusicComponent';
 import VideoGames from './VideoGamesComponent';
 import Home from './HomeComponent';
+import Page from './PageComponent';
 import { PageContent } from '../shared/PageContent';
 
 class Main extends Component {
@@ -18,6 +19,7 @@ class Main extends Component {
       pageContent: PageContent,
     };
   }
+
   render() {
     return (
       <div>
@@ -30,6 +32,7 @@ class Main extends Component {
           <Route path="/music" element={<Music />} />
           <Route path="/tvshows" element={<TVshows />} />
           <Route path="/videogames" element={<VideoGames />} />
+          <Route path="/protopage" element={<Page />} />
         </Routes>
         <Footer />
       </div>

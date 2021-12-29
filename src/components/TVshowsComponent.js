@@ -36,7 +36,7 @@ class TVshows extends Component {
 
         <div className="row custom-row">
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
-            <img src="../assets/images/tv-shows-sapranos.jpg" alt="sopranos" />
+            <img src="../assets/images/tv-shows-sopranos.jpg" alt="sopranos" />
           </div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
             <h2 className="movie-h2 badge-pill">The Sopranos</h2>
