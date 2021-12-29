@@ -29,7 +29,7 @@ const RenderThePage = ({ item }) => {
 };
 
 const RenderPage = (props) => {
-  return <RenderThePage item={props.pageContent} />;
+  return <RenderThePage item={props.content} />;
 };
 
 export default RenderPage;

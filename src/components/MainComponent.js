@@ -25,8 +25,8 @@ class Main extends Component {
     const MoviePage = () => {
       return (
         <RenderPage
-          pageCont={this.state.pageContent.filter(
-            (pageCont) => pageCont.category === 'Movie'
+          item={this.state.pageContent.filter(
+            (content) => content.category === 'movie-page'
           )}
         />
       );
