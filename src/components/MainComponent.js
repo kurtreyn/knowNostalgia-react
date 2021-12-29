@@ -22,6 +22,16 @@ class Main extends Component {
   }
 
   render() {
+    const MoviePage = () => {
+      return (
+        <RenderPage
+          pageCont={this.state.pageContent.filter(
+            (pageCont) => pageCont.category === 'Movie'
+          )}
+        />
+      );
+    };
+
     return (
       <div>
         <Header />
@@ -34,7 +44,7 @@ class Main extends Component {
           <Route path="/tvshows" element={<TVshows />} />
           <Route path="/videogames" element={<VideoGames />} />
           <Route path="/protopage" element={<Page />} />
-          <Route path="/rendpage" element={<RenderPage />} />
+          <Route path="/rendpage" element={<MoviePage />} />
         </Routes>
         <Footer />
       </div>
