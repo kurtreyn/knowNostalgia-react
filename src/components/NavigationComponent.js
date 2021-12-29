@@ -64,6 +64,10 @@ const Navigation = (props) => {
                   {' '}
                   <Link to="/protopage">Proto Page</Link>
                 </DropdownItem>
+                <DropdownItem>
+                  {' '}
+                  <Link to="/rendpage">Render Page</Link>
+                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>

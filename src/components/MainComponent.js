@@ -10,6 +10,7 @@ import Music from './MusicComponent';
 import VideoGames from './VideoGamesComponent';
 import Home from './HomeComponent';
 import Page from './PageComponent';
+import RenderPage from './RenderPage';
 import { PageContent } from '../shared/PageContent';
 
 class Main extends Component {
@@ -33,6 +34,7 @@ class Main extends Component {
           <Route path="/tvshows" element={<TVshows />} />
           <Route path="/videogames" element={<VideoGames />} />
           <Route path="/protopage" element={<Page />} />
+          <Route path="/rendpage" element={<RenderPage />} />
         </Routes>
         <Footer />
       </div>
