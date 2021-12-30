@@ -60,10 +60,6 @@ const Navigation = (props) => {
                   {' '}
                   <Link to="/videogames">Video Games</Link>
                 </DropdownItem>
-                <DropdownItem>
-                  {' '}
-                  <Link to="/preview">Preview</Link>
-                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
