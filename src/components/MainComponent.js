@@ -6,6 +6,7 @@ import Footer from './FooterComponent';
 import About from './AboutComponent';
 import Home from './HomeComponent';
 import RenderPage from './RenderPageComponent';
+import SearchPage from './SearchComponent';
 import { PageContent } from '../shared/PageContent';
 
 class Main extends Component {
@@ -24,6 +25,7 @@ class Main extends Component {
         .map((item) => {
           return <RenderPage item={item} />;
         }));
+      <SearchPage />;
     };
 
     const MusicPage = () => {
