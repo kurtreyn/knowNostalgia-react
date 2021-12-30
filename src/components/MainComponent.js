@@ -21,9 +21,13 @@ class Main extends Component {
   }
 
   render() {
-    const abra = () => {
+    const abra = (matchThis) => {
       let item = '';
-      let matchThis = '';
+      return (item = this.state.topPageCont
+        .filter((content) => content.category === matchThis)
+        .map((item) => {
+          return <RenderHeader item={item} />;
+        }));
     };
 
     const HomeAboutHeader = () => {
@@ -33,6 +37,8 @@ class Main extends Component {
         .map((item) => {
           return <RenderHeader item={item} />;
         }));
+      // let matchThis = 'home-about-page';
+      // abra();
     };
 
     const HomeGroup = () => {
@@ -73,6 +79,8 @@ class Main extends Component {
         .map((item) => {
           return <RenderHeader item={item} />;
         }));
+      // let matchThis = 'movie-page';
+      // abra();
     };
 
     const MovieSearch = () => {
@@ -112,6 +120,8 @@ class Main extends Component {
         .map((item) => {
           return <RenderHeader item={item} />;
         }));
+      // let matchThis = 'music-page';
+      // abra();
     };
 
     const MusicGroup = () => {
@@ -141,6 +151,8 @@ class Main extends Component {
         .map((item) => {
           return <RenderHeader item={item} />;
         }));
+      // let matchThis = 'tv-show-page';
+      // abra();
     };
 
     const TVSearch = () => {
@@ -174,12 +186,14 @@ class Main extends Component {
     };
 
     const VideoGamesHeader = () => {
-      let item = '';
-      return (item = this.state.topPageCont
-        .filter((content) => content.category === 'video-games-page')
-        .map((item) => {
-          return <RenderHeader item={item} />;
-        }));
+      // let item = '';
+      // return (item = this.state.topPageCont
+      //   .filter((content) => content.category === 'video-games-page')
+      //   .map((item) => {
+      //     return <RenderHeader item={item} />;
+      //   }));
+      let matchThis = 'video-games-page';
+      abra();
     };
 
     const VideoGamesGroup = () => {
