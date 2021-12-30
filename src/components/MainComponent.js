@@ -186,14 +186,14 @@ class Main extends Component {
     };
 
     const VideoGamesHeader = () => {
-      // let item = '';
-      // return (item = this.state.topPageCont
-      //   .filter((content) => content.category === 'video-games-page')
-      //   .map((item) => {
-      //     return <RenderHeader item={item} />;
-      //   }));
-      let matchThis = 'video-games-page';
-      abra();
+      let item = '';
+      return (item = this.state.topPageCont
+        .filter((content) => content.category === 'video-games-page')
+        .map((item) => {
+          return <RenderHeader item={item} />;
+        }));
+      // let matchThis = 'video-games-page';
+      // abra();
     };
 
     const VideoGamesGroup = () => {
@@ -209,8 +209,6 @@ class Main extends Component {
 
     return (
       <div>
-        {/* <Header />
-        <Navigation /> */}
         <Routes>
           <Route path="/" element={<HomeGroup />} />
           <Route path="/about" element={<AboutGroup />} />
@@ -219,7 +217,6 @@ class Main extends Component {
           <Route path="/tvshows" element={<TVshowGroup />} />
           <Route path="/videogames" element={<VideoGamesGroup />} />
         </Routes>
-        {/* <Footer /> */}
       </div>
     );
   }
