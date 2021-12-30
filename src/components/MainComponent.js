@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Header from './HeaderComponent';
+// import Header from './HeaderComponent';
 import Navigation from './NavigationComponent';
 import Footer from './FooterComponent';
 import About from './AboutComponent';
@@ -21,6 +21,42 @@ class Main extends Component {
   }
 
   render() {
+    const abra = () => {
+      let item = '';
+      let matchThis = '';
+    };
+
+    const HomeAboutHeader = () => {
+      let item = '';
+      return (item = this.state.topPageCont
+        .filter((content) => content.category === 'home-about-page')
+        .map((item) => {
+          return <RenderHeader item={item} />;
+        }));
+    };
+
+    const HomeGroup = () => {
+      return (
+        <>
+          <HomeAboutHeader />
+          <Navigation />
+          <Home />
+          <Footer />
+        </>
+      );
+    };
+
+    const AboutGroup = () => {
+      return (
+        <>
+          <HomeAboutHeader />
+          <Navigation />
+          <About />
+          <Footer />
+        </>
+      );
+    };
+
     const MoviePage = () => {
       let item = '';
       return (item = this.state.pageContent
@@ -45,6 +81,7 @@ class Main extends Component {
           <MovieHeader />
           <Navigation />
           <MoviePage />
+          <SearchPage />
           <Footer />
         </>
       );
@@ -59,6 +96,26 @@ class Main extends Component {
         }));
     };
 
+    const MusicHeader = () => {
+      let item = '';
+      return (item = this.state.topPageCont
+        .filter((content) => content.category === 'music-page')
+        .map((item) => {
+          return <RenderHeader item={item} />;
+        }));
+    };
+
+    const MusicGroup = () => {
+      return (
+        <>
+          <MusicHeader />
+          <Navigation />
+          <MusicPage />
+          <Footer />
+        </>
+      );
+    };
+
     const TVshowPage = () => {
       let item = '';
       return (item = this.state.pageContent
@@ -66,6 +123,27 @@ class Main extends Component {
         .map((item) => {
           return <RenderPage item={item} />;
         }));
+    };
+
+    const TVshowHeader = () => {
+      let item = '';
+      return (item = this.state.topPageCont
+        .filter((content) => content.category === 'tv-show-page')
+        .map((item) => {
+          return <RenderHeader item={item} />;
+        }));
+    };
+
+    const TVshowGroup = () => {
+      return (
+        <>
+          <TVshowHeader />
+          <Navigation />
+          <TVshowPage />
+          <SearchPage />
+          <Footer />
+        </>
+      );
     };
 
     const VideoGamesPage = () => {
@@ -77,20 +155,39 @@ class Main extends Component {
         }));
     };
 
+    const VideoGamesHeader = () => {
+      let item = '';
+      return (item = this.state.topPageCont
+        .filter((content) => content.category === 'video-games-page')
+        .map((item) => {
+          return <RenderHeader item={item} />;
+        }));
+    };
+
+    const VideoGamesGroup = () => {
+      return (
+        <>
+          <VideoGamesHeader />
+          <Navigation />
+          <VideoGamesPage />
+          <Footer />
+        </>
+      );
+    };
+
     return (
       <div>
-        <Header />
-        <Navigation />
+        {/* <Header />
+        <Navigation /> */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/movies" element={<MoviePage />} />
-          <Route path="/music" element={<MusicPage />} />
-          <Route path="/tvshows" element={<TVshowPage />} />
-          <Route path="/videogames" element={<VideoGamesPage />} />
-          <Route path="/preview" element={<MovieGroup />} />
+          <Route path="/" element={<HomeGroup />} />
+          <Route path="/about" element={<AboutGroup />} />
+          <Route path="/movies" element={<MovieGroup />} />
+          <Route path="/music" element={<MusicGroup />} />
+          <Route path="/tvshows" element={<TVshowGroup />} />
+          <Route path="/videogames" element={<VideoGamesGroup />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

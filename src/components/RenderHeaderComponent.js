@@ -5,12 +5,12 @@ const RenderHeader = ({ item }) => {
     <header>
       <div className="jumbotron-fluid">
         <div className="container-fluid hero-container">
-          <img src={item.image} alt="hero" />
+          <img src={item.heroImage} alt="hero" />
         </div>
       </div>
       <div className="col-12 d-flex justify-content-center logo-column">
         <img
-          src={item.logo}
+          src={item.pageTitleImage}
           alt="header logo"
           className="img-fluid logo-header"
         />
