@@ -5,7 +5,7 @@ export const PageTopContent = [
     category: `home-about-page`,
     title: `hero image`,
     info: `none`,
-    image: `../images/hero-img-lg.jpg`,
+    image: `./assets/images/hero-img-lg.jpg`,
   },
   {
     id: 1,
@@ -13,7 +13,7 @@ export const PageTopContent = [
     category: `movie-page`,
     title: `hero image`,
     info: `none`,
-    image: `../images/movies-banner.jpg`,
+    image: `./assets/images/movies-banner.jpg`,
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const PageTopContent = [
     category: `music-page`,
     title: `hero image`,
     info: `none`,
-    image: `../images/music-banner.jpg`,
+    image: `./assets/images/music-banner.jpg`,
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const PageTopContent = [
     category: `tv-show-page`,
     title: `hero image`,
     info: `none`,
-    image: `../images/music-banner.jpg`,
+    image: `./assets/images/music-banner.jpg`,
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const PageTopContent = [
     category: `video-games-page`,
     title: `hero image`,
     info: `none`,
-    image: `../images/videogame-banner.jpg`,
+    image: `./assets/images/videogame-banner.jpg`,
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ export const PageTopContent = [
     category: `home-about-page`,
     title: `page title image`,
     info: `none`,
-    image: `../images/header-logo.png`,
+    image: `./assets/images/header-logo.png`,
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ export const PageTopContent = [
     category: `movie-page`,
     title: `page title image`,
     info: `none`,
-    image: `../images/know-movies.png`,
+    image: `./assets/images/know-movies.png`,
   },
   {
     id: 7,
@@ -61,7 +61,7 @@ export const PageTopContent = [
     category: `music-page`,
     title: `page title image`,
     info: `none`,
-    image: `../images/know-music.png`,
+    image: `./assets/images/know-music.png`,
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ export const PageTopContent = [
     category: `tv-show-page`,
     title: `page title image`,
     info: `none`,
-    image: `../images/know-tv-shows.png`,
+    image: `./assets/images/know-tv-shows.png`,
   },
   {
     id: 9,
@@ -77,6 +77,6 @@ export const PageTopContent = [
     category: `video-games-page`,
     title: `page title image`,
     info: `none`,
-    image: `../images/know-video-games.png`,
+    image: `./assets/images/know-video-games.png`,
   },
 ];

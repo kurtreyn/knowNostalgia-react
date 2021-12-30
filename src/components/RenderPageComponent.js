@@ -89,7 +89,7 @@ const RenderPage = ({ item }) => {
           case 'half-life':
             delta();
             break;
-          case 'mario':
+          case 'mario-64':
             delta();
             break;
         }
