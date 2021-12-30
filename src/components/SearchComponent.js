@@ -1,19 +1,21 @@
 import React from 'react';
+import apiMovies from '../shared/apiMovies';
+import apiTV from '../shared/apiTV';
 
 const SearchPage = ({ item }) => {
   return (
-    <div className="container">
+    <div className="container" key={item.id}>
       <div className="row custom-row search-row">
         <div className="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
           <form>
             <h2>Search Movies</h2>
             <div className="form-group">
-              <label for="movieTitle"></label>
+              <label for={item.searhID}></label>
               <input
                 type="text"
                 className="form-control"
-                id="movie-title"
-                placeholder="Search for a Movie"
+                id={item.searchID}
+                placeholder={item.placeHolder}
               />
             </div>
             {/* <div className="form-group">

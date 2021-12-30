@@ -75,13 +75,22 @@ class Main extends Component {
         }));
     };
 
+    const MovieSearch = () => {
+      let item = '';
+      return (item = this.state.topPageCont
+        .filter((content) => content.category === 'movie-page')
+        .map((item) => {
+          return <SearchPage item={item} />;
+        }));
+    };
+
     const MovieGroup = () => {
       return (
         <>
           <MovieHeader />
           <Navigation />
           <MoviePage />
-          <SearchPage />
+          <MovieSearch />
           <Footer />
         </>
       );
@@ -134,13 +143,22 @@ class Main extends Component {
         }));
     };
 
+    const TVSearch = () => {
+      let item = '';
+      return (item = this.state.topPageCont
+        .filter((content) => content.category === 'tv-show-page')
+        .map((item) => {
+          return <SearchPage item={item} />;
+        }));
+    };
+
     const TVshowGroup = () => {
       return (
         <>
           <TVshowHeader />
           <Navigation />
           <TVshowPage />
-          <SearchPage />
+          <TVSearch />
           <Footer />
         </>
       );
