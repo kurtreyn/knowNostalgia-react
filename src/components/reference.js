@@ -109,3 +109,94 @@ const pageSetup = function () {
 for (const fb of factPageBtns) {
   fb.addEventListener('click', pageSetup);
 }
+
+// ----------
+
+const pageSetup = function (e) {
+  // let content = PageContent.map((cont) => {});
+
+  const factCont = document.querySelectorAll('[data-container]');
+  const factPageBtns = document.querySelectorAll('[data-fact-button]');
+  let curFB = '';
+  let curCont = '';
+  curFB = e.target.getAttribute('data-fact-button');
+  // console.log(`current button is ${curFB}`);
+
+  for (let y = 0; y < factCont.length; y++) {
+    curCont = factCont[y].getAttribute('data-container');
+
+    let originalText = factCont[y].innerText;
+    let initBtnTxt = factPageBtns[y].innerText;
+
+    if (curCont === curFB) {
+      // console.log(`current container is: ${curCont}`);
+      // console.log(`it's a match`);
+      // console.log(factCont[y]);
+
+      function delta() {
+        factCont[y].innerText = PageContent[0].trivia;
+        factPageBtns[y].innerText = 'close';
+        // console.log(`factContY is ${factCont[y]}`);
+      }
+
+      const unDelta = function () {
+        factCont[y].innerText = originalText;
+        factPageBtns[y].innerText = initBtnTxt;
+        curFB = '';
+        curCont = '';
+        // console.log(`curFB is now ${curFB} curCont is now ${curCont}`);
+      };
+
+      switch (curCont) {
+        case 'anchorman':
+          factCont.innerText = '';
+          delta();
+          break;
+        case 'cloverfield':
+          factCont.innerText = '';
+          delta();
+          break;
+        case 'donnie-darko':
+          factCont.innerText = '';
+          delta();
+          break;
+        case 'bittersweet':
+          factCont.innerText = '';
+          delta();
+          break;
+        case 'spirit':
+          factCont.innerText = '';
+          delta();
+          break;
+        case 'hammer':
+          factCont.innerText = '';
+          delta();
+          break;
+        case 'south-park':
+          factCont.innerText = '';
+          delta();
+          break;
+        case 'sopranos':
+          factCont.innerText = '';
+          delta();
+          break;
+        case 'dexter':
+          factCont.innerText = '';
+          delta();
+          break;
+        case 'god-of-war':
+          factCont.innerText = '';
+          delta();
+          break;
+        case 'half-life':
+          factCont.innerText = '';
+          delta();
+          break;
+        case 'mario':
+          factCont.innerText = '';
+          delta();
+          break;
+      }
+    }
+  }
+};

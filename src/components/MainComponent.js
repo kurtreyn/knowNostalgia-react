@@ -25,7 +25,6 @@ class Main extends Component {
         .map((item) => {
           return <RenderPage item={item} />;
         }));
-      <SearchPage />;
     };
 
     const MusicPage = () => {
