@@ -5,7 +5,7 @@ const SearchPage = ({ item }) => {
     const url = `https://omdbapi.com/?s=${searchTitle}&page=1&apikey=99e6a288`;
     const searchRes = await fetch(`${url}`);
     const data = await searchRes.json();
-    if (data.Response === 'True') console.log(data.Search);
+    // if (data.Response === 'True') console.log(data.Search);
     if (data.Response === 'True') displayList(data.Search);
   }
 
@@ -86,23 +86,24 @@ const SearchPage = ({ item }) => {
     // const resultGrid = document.getElementById('result-grid');
     let poster;
     searchList.innerHTML = '';
-    for (let idx = 0; idx < things.length; idx++) {
+    for (let i = 0; i < things.length; i++) {
       let movieListItem = document.createElement('div');
       let tvListItem = document.createElement('div');
       // console.log(movieListItem);
-      movieListItem.dataset.id = things[idx].imdbID;
-      tvListItem.dataset.id = things[idx].imdbID;
+      movieListItem.dataset.id = things[i].imdbID;
+      tvListItem.dataset.id = things[i].imdbID;
       movieListItem.classList.add('search-list-item');
       tvListItem.classList.add('search-list-item');
-      if (things[idx].Poster !== 'N/A') {
-        poster = things[idx].Poster;
+      if (things[i].Poster !== 'N/A') {
+        poster = things[i].Poster;
       } else {
         poster = '../assets/images/image_not_found.png';
       }
-      let movieYear = things[idx].Year;
-      let movieType = things[idx].Type;
-      let tvYear = things[idx].Year;
-      let tvType = things[idx].Type;
+
+      let movieYear = things[i].Year;
+      let movieType = things[i].Type;
+      let tvYear = things[i].Year;
+      let tvType = things[i].Type;
       if (movieYear >= '1990' && movieYear <= '2009' && movieType === 'movie') {
         movieListItem.innerHTML = `
         <div class="search-list-item">

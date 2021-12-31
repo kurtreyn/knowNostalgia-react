@@ -21,14 +21,14 @@ class Main extends Component {
   }
 
   render() {
-    const abra = (matchThis) => {
-      let item = '';
-      return (item = this.state.topPageCont
-        .filter((content) => content.category === matchThis)
-        .map((item) => {
-          return <RenderHeader item={item} />;
-        }));
-    };
+    // const abra = (matchThis) => {
+    //   let item = '';
+    //   return (item = this.state.topPageCont
+    //     .filter((content) => content.category === matchThis)
+    //     .map((item) => {
+    //       return <RenderHeader item={item} />;
+    //     }));
+    // };
 
     const HomeAboutHeader = () => {
       let item = '';
@@ -37,8 +37,8 @@ class Main extends Component {
         .map((item) => {
           return <RenderHeader item={item} />;
         }));
-      // let matchThis = 'home-about-page';
-      // abra();
+      // let match = 'home-about-page';
+      // abra(match);
     };
 
     const HomeGroup = () => {
