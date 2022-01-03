@@ -21,24 +21,35 @@ class Main extends Component {
   }
 
   render() {
-    // const abra = (matchThis) => {
-    //   let item = '';
-    //   return (item = this.state.topPageCont
-    //     .filter((content) => content.category === matchThis)
-    //     .map((item) => {
-    //       return <RenderHeader item={item} />;
-    //     }));
-    // };
-
-    const HomeAboutHeader = () => {
-      let item = '';
+    const abra = (item = '', matchThis) => {
+      item = '';
       return (item = this.state.topPageCont
-        .filter((content) => content.category === 'home-about-page')
+        .filter((content) => content.category === matchThis)
         .map((item) => {
           return <RenderHeader item={item} />;
         }));
-      // let match = 'home-about-page';
-      // abra(match);
+    };
+
+    const cadabra = (item = '', matchThis) => {
+      item = '';
+      return (item = this.state.pageContent
+        .filter((content) => content.category === matchThis)
+        .map((item) => {
+          return <RenderPage item={item} />;
+        }));
+    };
+
+    const alakazam = (item = '', matchThis) => {
+      item = '';
+      return (item = this.state.topPageCont
+        .filter((content) => content.category === matchThis)
+        .map((item) => {
+          return <SearchPage item={item} />;
+        }));
+    };
+
+    const HomeAboutHeader = () => {
+      return abra('', 'home-about-page');
     };
 
     const HomeGroup = () => {
@@ -63,33 +74,16 @@ class Main extends Component {
       );
     };
 
-    const MoviePage = () => {
-      let item = '';
-      return (item = this.state.pageContent
-        .filter((content) => content.category === 'movie-page')
-        .map((item) => {
-          return <RenderPage item={item} />;
-        }));
+    const MovieHeader = () => {
+      return abra('', 'movie-page');
     };
 
-    const MovieHeader = () => {
-      let item = '';
-      return (item = this.state.topPageCont
-        .filter((content) => content.category === 'movie-page')
-        .map((item) => {
-          return <RenderHeader item={item} />;
-        }));
-      // let matchThis = 'movie-page';
-      // abra();
+    const MoviePage = () => {
+      return cadabra('', 'movie-page');
     };
 
     const MovieSearch = () => {
-      let item = '';
-      return (item = this.state.topPageCont
-        .filter((content) => content.category === 'movie-page')
-        .map((item) => {
-          return <SearchPage item={item} />;
-        }));
+      return alakazam('', 'movie-page');
     };
 
     const MovieGroup = () => {
@@ -104,24 +98,12 @@ class Main extends Component {
       );
     };
 
-    const MusicPage = () => {
-      let item = '';
-      return (item = this.state.pageContent
-        .filter((content) => content.category === 'music-page')
-        .map((item) => {
-          return <RenderPage item={item} />;
-        }));
+    const MusicHeader = () => {
+      return abra('', 'music-page');
     };
 
-    const MusicHeader = () => {
-      let item = '';
-      return (item = this.state.topPageCont
-        .filter((content) => content.category === 'music-page')
-        .map((item) => {
-          return <RenderHeader item={item} />;
-        }));
-      // let matchThis = 'music-page';
-      // abra();
+    const MusicPage = () => {
+      return cadabra('', 'music-page');
     };
 
     const MusicGroup = () => {
@@ -135,33 +117,16 @@ class Main extends Component {
       );
     };
 
-    const TVshowPage = () => {
-      let item = '';
-      return (item = this.state.pageContent
-        .filter((content) => content.category === 'tv-show-page')
-        .map((item) => {
-          return <RenderPage item={item} />;
-        }));
+    const TVshowHeader = () => {
+      return abra('', 'tv-show-page');
     };
 
-    const TVshowHeader = () => {
-      let item = '';
-      return (item = this.state.topPageCont
-        .filter((content) => content.category === 'tv-show-page')
-        .map((item) => {
-          return <RenderHeader item={item} />;
-        }));
-      // let matchThis = 'tv-show-page';
-      // abra();
+    const TVshowPage = () => {
+      return cadabra('', 'tv-show-page');
     };
 
     const TVSearch = () => {
-      let item = '';
-      return (item = this.state.topPageCont
-        .filter((content) => content.category === 'tv-show-page')
-        .map((item) => {
-          return <SearchPage item={item} />;
-        }));
+      return alakazam('', 'tv-show-page');
     };
 
     const TVshowGroup = () => {
@@ -176,24 +141,12 @@ class Main extends Component {
       );
     };
 
-    const VideoGamesPage = () => {
-      let item = '';
-      return (item = this.state.pageContent
-        .filter((content) => content.category === 'video-games-page')
-        .map((item) => {
-          return <RenderPage item={item} />;
-        }));
+    const VideoGamesHeader = () => {
+      return abra('', 'video-games-page');
     };
 
-    const VideoGamesHeader = () => {
-      let item = '';
-      return (item = this.state.topPageCont
-        .filter((content) => content.category === 'video-games-page')
-        .map((item) => {
-          return <RenderHeader item={item} />;
-        }));
-      // let matchThis = 'video-games-page';
-      // abra();
+    const VideoGamesPage = () => {
+      return cadabra('', 'video-games-page');
     };
 
     const VideoGamesGroup = () => {
