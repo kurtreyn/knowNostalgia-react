@@ -23,14 +23,17 @@ const SearchPage = ({ item }) => {
     const searchList = document.getElementById('search-list');
     let searchTerm = searchBox.value.trim();
     // console.log(searchTerm);
-    if (searchType === 'movie' && searchTerm.Length > 0) {
+    if (searchType === 'movie' && searchTerm.length > 0) {
       searchList.classList.remove('hide-search-list');
       loadMovies(searchTerm);
+      // console.log(searchType);
     } else if (searchType === 'series' && searchTerm.length > 0) {
       searchList.classList.remove('hide-search-list');
       loadTVshows(searchTerm);
+      // console.log(searchType);
     } else {
       searchList.classList.add('hide-search-list');
+      // console.log(`nothing`);
     }
   }
 
