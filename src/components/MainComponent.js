@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Switch } from 'react-router-dom';
 // import Header from './HeaderComponent';
 import Navigation from './NavigationComponent';
 import Footer from './FooterComponent';

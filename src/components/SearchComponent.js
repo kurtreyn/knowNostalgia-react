@@ -5,7 +5,7 @@ const SearchPage = ({ item }) => {
     const url = `https://omdbapi.com/?s=${searchTitle}&page=1&apikey=99e6a288`;
     const searchRes = await fetch(`${url}`);
     const data = await searchRes.json();
-    if (data.Response === 'True') console.log(data.Search);
+    // if (data.Response === 'True') console.log(data.Search);
     if (data.Response === 'True') displayMovieList(data.Search);
   }
 
